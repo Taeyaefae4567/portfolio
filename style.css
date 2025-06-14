@@ -86,3 +86,12 @@ body{
         align-items: flex-start;
     }
 }
+
+.hidden {
+    display: none;
+}
+
+.section-toggle {
+    margin-top: 40px;
+    text-align: center;
+}

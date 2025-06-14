@@ -1,4 +1,12 @@
-function changeText() {
-    const message = document.getElementById("message");
-    MediaKeyMessageEvent.textContent = "ถ้าmendingทั้งหมดเป็นของผม แพงเท่าไหร่เฮียก็ต้องจ่าย";
-}
+const secretText = document.getElementById("secretText");
+const toggleBtn = document.getElementById("toggleBtn");
+
+toggleBtn.addEventListener("click", () => {
+    secretText.classList.toggle("hidden");
+
+    if (secretText.classList.contains("hidden")) {
+        toggleBtn.textContent = "show";
+    } else {
+        toggleBtn.textContent = "hide";
+    }
+});
