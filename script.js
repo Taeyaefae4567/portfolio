@@ -10,3 +10,4 @@ toggleBtn.addEventListener("click", () => {
         toggleBtn.textContent = "hide";
     }
 });
+console.log("JS loaded!);
