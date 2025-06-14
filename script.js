@@ -6,9 +6,9 @@ document.addEventListener("DOMContentLoaded", function () {
         secretText.classList.toggle("hidden");
 
         if (secretText.classList.contains("hidden")) {
-            toggleBtn.textContent = "show";
+            toggleBtn.textContent = "sybau";
         } else {
-            toggleBtn.textContent = "hide";
+            toggleBtn.textContent = "huh?";
         }
     });
 });
