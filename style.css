@@ -95,3 +95,21 @@ body{
     margin-top: 40px;
     text-align: center;
 }
+
+body {
+    background-color: #111;
+    color: #fff;
+    transform: 0.3s;
+}
+
+.light-mode {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
