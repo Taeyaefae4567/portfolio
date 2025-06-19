@@ -23,3 +23,23 @@ themeBtn.addEventListener("click", () => {
     }
 });
 
+function saveNote() {
+    const input = document.getElementById("noteInput");
+    const note = input.value;
+
+    if (note.trim() === "") {
+        alert("กรุณาพิมพ์โน้ตก่อนบันทึก");
+        return;
+    }
+    
+    localStorage.setItem("myNote", note);
+    document.getElementById("savedNote").textContent = "📌" + note;
+    input.value = "";
+}
+
+window.addEventListener("DOMContentLoaded",() => {
+    const saved = localStorage.getItem("myNote");
+    if (saved) {
+        document.getElementById("savedNote").textContent ="📌" + saved;
+    }
+});
